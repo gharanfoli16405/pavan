@@ -1,3 +1,5 @@
+import Lorem from "@components/Lorem";
+
 export function meta({}) {
   return [
     { title: "New React Router App" },
@@ -8,7 +10,20 @@ export function meta({}) {
 export default function Home() {
   return (
     <>
-      <p>Home</p>
+      <div className="px-2">
+        <div className="mb-8">
+          <Lorem />
+        </div>
+        <div className="mb-8">
+          <Lorem />
+        </div>
+        <div className="mb-8">
+          <Lorem />
+        </div>
+        <div className="mb-8">
+          <Lorem />
+        </div>
+      </div>
     </>
   );
 }
