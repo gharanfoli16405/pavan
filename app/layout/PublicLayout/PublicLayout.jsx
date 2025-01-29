@@ -8,7 +8,14 @@ const PublicLayout = () => {
     <Navigate replace to="/" />
   ) : (
     <div>
-      <Outlet />
+      <div className="grid grid-cols-12 h-screen">
+        <div className="col-span-12 md:col-span-5 hidden md:block bg-red-400">
+          1
+        </div>
+        <div className="col-span-12 md:col-span-7 flex items-center justify-center">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };
