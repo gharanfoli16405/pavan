@@ -1,23 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const useDarkSide = () => {
-  //   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-  const [theme, setTheme] = useState("dark");
+  console.log("window.matchMedia", window.matchMedia);
 
-  const colorTheme = theme === "dark" ? "light" : "dark";
-  console.log("🚀 ~ useDarkSide ~ theme:", theme); // current theme
-  console.log("🚀 ~ useDarkSide ~ colorTheme:", colorTheme); // swithchtem
+  // بررسی حالت رنگ
+  console.log(localStorage.getItem("theme"));
+  if (window.matchMedia) {
+    console.log("window.matchMedia موجود است: ", window.matchMedia);
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      console.log("کاربر حالت تیره را ترجیح می‌دهد");
+    } else {
+      console.log("کاربر حالت روشن را ترجیح می‌دهد");
+    }
+  } else {
+    console.log("window.matchMedia پشتیبانی نمی‌شود");
+  }
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.remove(colorTheme);
-    root.classList.add(theme);
+    // first;
 
-    // save theme to local storage
-    localStorage.setItem("theme", theme);
-  }, [theme, colorTheme]);
+    return () => {
+      // second;
+    };
+  }, []);
 
-  return [colorTheme, setTheme];
+  return "alak";
 };
 
 export default useDarkSide;

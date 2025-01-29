@@ -2,11 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* :root {
+  --background: "#333";
+} */
+
+/* html,
 body {
   @apply bg-white dark:bg-gray-950;
+  @apply bg-background;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+} */
+
+/* @layer base {
+    :root {
+       --background: "#f0f0f1";
+     }
+   }
+   */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+  --background: "#333";
+  }
+   } */
+
+.light {
+  --background: #f0f0f1;
+  --secondary: red;
+
+  background: var(--background);
+}
+.dark {
+  --background: #333;
+  --secondary: blue;
+  background: var(--background);
 }

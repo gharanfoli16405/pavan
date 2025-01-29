@@ -1,7 +1,7 @@
 const Lorem = () => {
   return (
     <>
-      <p>
+      <p className="text-secondary">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
         laboriosam, reprehenderit consequuntur voluptatibus ad neque nesciunt
         doloremque ipsa, fugit hic maiores voluptates explicabo asperiores
