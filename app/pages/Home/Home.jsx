@@ -1,4 +1,6 @@
-import Lorem from "@components/Lorem";
+// import DahsboardForm from "./compoents/DahsboardForm/_DahsboardForm";
+import ProductDescription from "./compoents/ProductDescription";
+import ServicesForm from "./compoents/ServicesForm";
 
 export function meta({}) {
   return [
@@ -10,18 +12,15 @@ export function meta({}) {
 export default function Home() {
   return (
     <>
-      <div className="px-2">
-        <div className="mb-8">
-          <Lorem />
+      <div className="grid grid-cols-12">
+        <div className="col-span-12 lg:col-span-3 border border-black">
+          <ProductDescription />
         </div>
-        <div className="mb-8">
-          <Lorem />
+        <div className="col-span-12 lg:col-span-4 border border-black">
+          <ServicesForm />
         </div>
-        <div className="mb-8">
-          <Lorem />
-        </div>
-        <div className="mb-8">
-          <Lorem />
+        <div className="col-span-12 lg:col-span-5 border border-black">
+          تمنی
         </div>
       </div>
     </>
