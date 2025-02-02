@@ -18,7 +18,8 @@
       "@constant/*": ["app/constant/*"],
       "@components/*": ["app/components/*"],
       "@hooks/*": ["app/hooks/*"],
-      "@helper/*": ["app/helper/*"]
+      "@helper/*": ["app/helper/*"],
+      "@utils/*": ["app/utils/*"]
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
