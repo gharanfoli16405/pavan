@@ -13,6 +13,7 @@ export default defineConfig({
       "@hooks": path.resolve(__dirname, "./app/hooks"),
       "@helper": path.resolve(__dirname, "./app/helper"),
       "@utils": path.resolve(__dirname, "./app/utils"),
+      "@locales": path.resolve(__dirname, "./app/locales"),
     },
   },
   css: {

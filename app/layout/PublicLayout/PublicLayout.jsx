@@ -1,7 +1,10 @@
 import useLocalStorage from "@hooks/useLocalStorage";
 import { Navigate, Outlet } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const PublicLayout = () => {
+  const { t, i18n } = useTranslation();
+
   const [token, setToken] = useLocalStorage("token", null);
   console.log("token is", token);
 
@@ -9,6 +12,7 @@ const PublicLayout = () => {
     <Navigate replace to="/" />
   ) : (
     <div>
+      <h1>{t("welcome")}</h1>
       <div className="grid grid-cols-12 h-screen">
         <div className="col-span-12 md:col-span-7 flex items-center justify-center">
           <Outlet />

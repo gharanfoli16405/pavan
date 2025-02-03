@@ -8,6 +8,7 @@
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": ["node", "vite/client"],
+    "allowJs": true, // اجازه‌ی ایمپورت فایل‌های جاوااسکریپت
     "target": "ES2022",
     "module": "ES2022",
     "moduleResolution": "bundler",
@@ -19,7 +20,8 @@
       "@components/*": ["app/components/*"],
       "@hooks/*": ["app/hooks/*"],
       "@helper/*": ["app/helper/*"],
-      "@utils/*": ["app/utils/*"]
+      "@utils/*": ["app/utils/*"],
+      "@locales/*": ["app/locales/*"]
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
