@@ -23,7 +23,7 @@ const PasswordField = ({ name, label, placeholder }) => {
         />
 
         <button
-          class="absolute  left-4 top-1/2 -translate-y-1/2 flex items-center  z-10 border border-gray-300 rounded-md p-1"
+          className="absolute  left-4 top-1/2 -translate-y-1/2 flex items-center  z-10 border border-gray-300 rounded-md p-1"
           onClick={() => setIsShow((prevState) => !prevState)}
         >
           {isShow ? "hide" : "show"}
