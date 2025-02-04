@@ -16,13 +16,13 @@
     "rootDirs": [".", "./.react-router/types"],
     "baseUrl": ".",
     "paths": {
-      "@constant/*": ["app/constant/*"],
       "@components/*": ["app/components/*"],
       "@hooks/*": ["app/hooks/*"],
       "@utils/*": ["app/utils/*"],
       "@locales/*": ["app/locales/*"],
       "@helper/*": ["app/utils/helper/*"],
-      "@validation/*": ["app/utils/validation/*"]
+      "@validation/*": ["app/utils/validation/*"],
+      "@constant/*": ["app/utils/constant/*"]
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
