@@ -15,7 +15,7 @@ const PasswordField = ({ name, label, placeholder }) => {
       </label>
       <div className="relative">
         <Field
-          autocomplete="off"
+          autoComplete="off"
           name={name}
           type={isShow ? "text" : "password"}
           placeholder={placeholder ? placeholder : `${label} خود را وارد کنید`}
