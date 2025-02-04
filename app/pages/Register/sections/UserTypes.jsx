@@ -2,7 +2,7 @@ import { Formik, Form } from "formik";
 import InputField from "@components/InputField";
 import BtnSubmit from "@components/BtnSubmit";
 import RadioButtonField from "@components/RadioButtonField";
-
+import { loginSchema } from "@validation/loginSchema";
 const userTypes = [
   { name: "isNaturalPerson", value: "true", label: "حقیقی" },
   { name: "isNaturalPerson", value: "false", label: "حقوقی" },
@@ -16,7 +16,7 @@ const UserTypes = ({ setStep }) => {
           userName: "",
           isNaturalPerson: "true",
         }}
-        // validationSchema={loginSchema}
+        validationSchema={loginSchema}
         onSubmit={(values, { setSubmitting }) => {
           console.log("values", values);
           setStep((prevState) => prevState + 1);

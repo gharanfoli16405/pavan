@@ -14,6 +14,7 @@ export default defineConfig({
       "@helper": path.resolve(__dirname, "./app/utils/helper"),
       "@utils": path.resolve(__dirname, "./app/utils"),
       "@locales": path.resolve(__dirname, "./app/locales"),
+      "@validation": path.resolve(__dirname, "./app/utils/validation"),
     },
   },
   css: {

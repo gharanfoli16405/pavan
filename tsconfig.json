@@ -19,9 +19,10 @@
       "@constant/*": ["app/constant/*"],
       "@components/*": ["app/components/*"],
       "@hooks/*": ["app/hooks/*"],
-      "@helper/*": ["app/utils/helper/*"],
       "@utils/*": ["app/utils/*"],
-      "@locales/*": ["app/locales/*"]
+      "@locales/*": ["app/locales/*"],
+      "@helper/*": ["app/utils/helper/*"],
+      "@validation/*": ["app/utils/validation/*"]
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
