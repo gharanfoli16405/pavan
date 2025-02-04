@@ -11,7 +11,7 @@ export default defineConfig({
       "@constant": path.resolve(__dirname, "./app/constant"),
       "@components": path.resolve(__dirname, "./app/components"),
       "@hooks": path.resolve(__dirname, "./app/hooks"),
-      "@helper": path.resolve(__dirname, "./app/helper"),
+      "@helper": path.resolve(__dirname, "./app/utils/helper"),
       "@utils": path.resolve(__dirname, "./app/utils"),
       "@locales": path.resolve(__dirname, "./app/locales"),
     },

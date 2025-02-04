@@ -19,7 +19,7 @@
       "@constant/*": ["app/constant/*"],
       "@components/*": ["app/components/*"],
       "@hooks/*": ["app/hooks/*"],
-      "@helper/*": ["app/helper/*"],
+      "@helper/*": ["app/utils/helper/*"],
       "@utils/*": ["app/utils/*"],
       "@locales/*": ["app/locales/*"]
     },

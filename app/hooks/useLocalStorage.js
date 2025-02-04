@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getStoredValue, saveValue } from "@helper/localStorageHelper";
+import { getStoredValue, saveValue } from "@utils/helper/localStorageHelper";
 
 const useLocalStorage = (key, initialValue) => {
   const [value, setValue] = useState(() => getStoredValue(key, initialValue));
