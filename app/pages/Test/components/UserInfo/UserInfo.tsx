@@ -1,17 +1,16 @@
 type UserInfo = {
   nikName: string;
   age: number;
-  isMarried: boolean;
-  sum: (a: number, b: number) => number;
+  lastName?: string;
 };
 
-const UserInfo: React.FC<UserInfo> = ({ nikName, age, isMarried, sum }) => {
+const UserInfo: React.FC<UserInfo> = (props) => {
+  const { nikName, age, lastName } = props;
   return (
     <>
-      <p>nikName is {nikName} </p>
-      <p>age is {age}</p>
-      <p>isMarried : {isMarried ? "true" : "false"}</p>
-      <p> 5 + 7 {sum(5, 7)}</p>
+      <div>
+        my name is {nikName} {lastName && lastName} . Im {age} years old .
+      </div>
     </>
   );
 };

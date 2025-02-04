@@ -5,6 +5,7 @@ import Swicher from "@components/Swicher/Swicher";
 
 const DashboardLayout = () => {
   const [token, setToken] = useLocalStorage("token", null);
+  console.log("tokennnn", token);
 
   return !Boolean(token) ? (
     <Navigate replace to="/auth" />

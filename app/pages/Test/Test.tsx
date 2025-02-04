@@ -1,13 +1,13 @@
-import UserInfo from "./components/UserInfo/UserInfo";
+import { useState } from "react";
+import Add from "./components/Add/Add";
 
 const Test = () => {
-  const sum = (a: number, b: number): number => {
-    return a + b;
-  };
+  const [step, setStep] = useState<number>(0);
+
   return (
     <>
-      <h1>In the name of god</h1>
-      <UserInfo nikName="Alex" age={30} isMarried={false} sum={sum} />
+      <h1>{step}</h1>
+      <Add handleIncrease={setStep} />
     </>
   );
 };
