@@ -6,7 +6,7 @@ const PublicLayout = () => {
   const { t, i18n } = useTranslation();
 
   const [token, setToken] = useLocalStorage("token", null);
-  console.log("token is", token);
+  // console.log("token is", token);
 
   return Boolean(token) ? (
     <Navigate replace to="/" />

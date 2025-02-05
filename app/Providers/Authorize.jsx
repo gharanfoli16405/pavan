@@ -1,9 +1,9 @@
-import { Children, useEffect } from "react";
+import { useEffect } from "react";
 import { getCookie } from "@utils/helper/cookie";
 const Authorize = ({ children }) => {
   const readCookie = async () => {
     const result = await getCookie("testData");
-    console.log("🚀 ~ readCookie ~ result:", result);
+    // console.log("🚀 ~ readCookie ~ result:", result);
   };
 
   useEffect(() => {

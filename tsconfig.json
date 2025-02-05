@@ -20,6 +20,7 @@
       "@hooks/*": ["app/hooks/*"],
       "@utils/*": ["app/utils/*"],
       "@locales/*": ["app/locales/*"],
+      "@apis/*": ["app/apis/*"],
       "@helper/*": ["app/utils/helper/*"],
       "@validation/*": ["app/utils/validation/*"],
       "@constant/*": ["app/utils/constant/*"]
